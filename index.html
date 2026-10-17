@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var fromQuery = params.get("theme");
+      var stored = null;
+      try { stored = localStorage.getItem("theme"); } catch (e) {}
+      var theme = fromQuery === "dark" || fromQuery === "light"
+        ? fromQuery
+        : stored === "dark" || stored === "light"
+          ? stored
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gautam Gupta — Staff Engineer / Tech Lead</title>
+  <meta name="description" content="Gautam Gupta is a Staff Engineer and Tech Lead in Gurgaon, India. He leads 8 engineers at Taggd and builds enterprise Java, Spring Boot, AWS, and GenAI systems.">
+  <meta name="author" content="Gautam Gupta">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://guptagautam768.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Gautam Gupta — Staff Engineer / Tech Lead">
+  <meta property="og:description" content="Staff Engineer and Tech Lead in Gurgaon. Enterprise Java, Spring Boot, AWS, and GenAI. Leads 8 engineers at Taggd.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://guptagautam768.github.io/">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gautam Gupta",
+    "jobTitle": "Staff Engineer / Tech Lead",
+    "email": "mailto:guptagautam768@gmail.com",
+    "url": "https://guptagautam768.github.io/",
+    "homeLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gurgaon",
+        "addressCountry": "India"
+      }
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/gautam-gupta-78bb09b7/",
+      "https://github.com/guptagautam768"
+    ],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Babasaheb Bhimrao Ambedkar University" },
+      { "@type": "CollegeOrUniversity", "name": "Lucknow University" }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="skip" href="#about">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="brand" href="#top">Gautam Gupta</a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Sections">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">Dark mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Staff Engineer / Tech Lead · Gurgaon, India</p>
+          <h1 id="hero-title">Gautam Gupta</h1>
+          <p class="lede">I build enterprise Java systems that stay fast under load, and I lead the engineers who run them. At Taggd I lead a team of 8 on an AI-native talent fulfilment platform handling 10,000+ TPS in production.</p>
+          <div class="actions">
+            <a class="button secondary" href="mailto:guptagautam768@gmail.com">Email</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/gautam-gupta-78bb09b7/" rel="me noopener noreferrer">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/guptagautam768" rel="me noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <aside class="now" aria-label="Current role">
+          <p class="eyebrow">Now</p>
+          <p class="role">Staff Engineer at Taggd, leading as Tech Lead.</p>
+          <ul>
+            <li>8 engineers: 6 full-stack, 2 QA</li>
+            <li>10,000+ TPS in production</li>
+            <li>Gurgaon, India</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>Solution design and hands-on engineering.</h2>
+        </div>
+        <div class="prose">
+          <p>I am a staff engineer and tech lead with 8+ years of experience building enterprise Java systems. I own HLD and LLD for business-critical modules, run architecture and code reviews, and drive delivery from requirements through production release.</p>
+          <p>On the AI side I have built recruitment workflows on OpenAI APIs and Spring AI, including RAG for contextual responses, function calling, AI agents, and real-time conversational applications with speech-to-text and text-to-speech. I also spend real time mentoring engineers and raising the technical bar on the team.</p>
+          <p>I work in English and Hindi. Recent certificates: Claude 101, Model Context Protocol (MCP), and Introduction to Agent Skills, all from Anthropic.</p>
+        </div>
+        <div class="facts">
+          <article>
+            <h3>MCA, 2018</h3>
+            <p>Babasaheb Bhimrao Ambedkar University</p>
+          </article>
+          <article>
+            <h3>BCA, 2015</h3>
+            <p>Lucknow University, Uttar Pradesh</p>
+          </article>
+          <article>
+            <h3>8+ years</h3>
+            <p>Enterprise Java, from developer to staff engineer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2>Two companies, a clear progression.</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <div class="when">
+              <strong>Mar 2023 — Present</strong>
+              <p>Gurgaon, India</p>
+            </div>
+            <div class="what">
+              <h3 class="role-title">Taggd</h3>
+              <p class="role-sub">Senior Software Engineer from Mar 2023 · Tech Lead from Jul 2025 · Staff Engineer from Jul 2026</p>
+              <p class="meta">AI-powered talent fulfilment platform for enterprise clients across India (<a href="https://taggd.in" rel="noopener noreferrer">taggd.in</a>). I lead 8 engineers (6 full-stack, 2 QA).</p>
+              <ul>
+                <li>Lead delivery of Taggd’s AI-native talent fulfilment platform, handling 10,000+ TPS in production.</li>
+                <li>Own HLD and LLD for business-critical modules, and drive architecture reviews, code reviews, and release.</li>
+                <li>Build AI recruitment workflows with OpenAI APIs and Spring AI: RAG, function calling, AI agents, and real-time conversation with STT/TTS.</li>
+                <li>Scaled the platform to 10,000+ TPS through database optimization and application tuning.</li>
+                <li>Manage resourcing and delivery timelines, run 1:1s, and mentor engineers.</li>
+              </ul>
+              <p class="tech">Technologies: Java, Spring Boot, Spring AI, Oracle, Angular, AWS, WebLogic Server.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when">
+              <strong>Aug 2018 — Feb 2023</strong>
+              <p>Software Developer</p>
+            </div>
+            <div class="what">
+              <h3 class="role-title">Thrymr Software</h3>
+              <p class="role-sub">Software Developer from Aug 2018 · Senior Software Developer from Oct 2020</p>
+              <div class="engagements">
+                <article class="engagement">
+                  <h4>Workshop Management System</h4>
+                  <p class="dates">Oct 2020 — Feb 2023 · <a href="https://www.alj.com/en/" rel="noopener noreferrer">alj.com</a></p>
+                  <p>Web and Android platform for vehicle service workshops: job allocation, estimation confirmation, job-plan sequencing, and workshop follow-up across multiple user roles.</p>
+                  <ul>
+                    <li>Cut API response time from 2.5s to 600ms through performance tuning and more efficient database interactions.</li>
+                    <li>Reduced database load by 20% by introducing a Redis caching layer.</li>
+                    <li>Owned Security and Role Management, including access-level design across user roles.</li>
+                    <li>Delivered HLD for Role Management, User Management, and Daily Productive Plan.</li>
+                    <li>Integrated third-party APIs into the platform.</li>
+                  </ul>
+                  <p class="tech">Technologies: Spring Boot, Oracle, Angular 6, WebLogic Server, Redis.</p>
+                </article>
+                <article class="engagement">
+                  <h4>HGC Global Communications</h4>
+                  <p class="dates">Oct 2019 — Nov 2020 · <a href="https://www.hgc.com.hk/en/" rel="noopener noreferrer">hgc.com.hk</a></p>
+                  <p>Fixed-line telecom operator in Hong Kong providing infrastructure and services to corporations and households.</p>
+                  <ul>
+                    <li>Migrated SOAP services to REST Spring Boot APIs and GraphQL, reducing integration complexity.</li>
+                    <li>Maintained 80%+ test coverage on critical modules using JUnit and Mockito.</li>
+                    <li>Improved report generation performance through query optimization.</li>
+                    <li>Integrated third-party APIs into the platform.</li>
+                  </ul>
+                  <p class="tech">Technologies: Java 13, Spring Boot, microservices, SQS, DynamoDB, GraphQL, Oracle, MySQL, Jira.</p>
+                </article>
+                <article class="engagement">
+                  <h4>CDAC</h4>
+                  <p class="dates">Sep 2018 — Oct 2019 · <a href="https://www.cdac.org.sg/en/" rel="noopener noreferrer">cdac.org.sg</a></p>
+                  <p>Revamp of a standalone legacy IT system into an integrated, data-centric web application.</p>
+                  <ul>
+                    <li>Worked as a full-stack developer building the new integrated web application.</li>
+                    <li>Built a report module generating monthly commencement letters using Apache PDFBox.</li>
+                    <li>Implemented Programme Management and Member Management modules, plus security features.</li>
+                  </ul>
+                  <p class="tech">Technologies: Spring Boot, PostgreSQL, Spring Data JPA, Angular 6, MongoDB.</p>
+                </article>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2>Java platforms, cloud, and GenAI.</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-group core">
+            <h3>Core</h3>
+            <ul>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Microservices</li>
+              <li>AWS</li>
+              <li>Kafka</li>
+              <li>SQS</li>
+              <li>Redis</li>
+              <li>GraphQL</li>
+              <li>REST</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>GenAI</h3>
+            <ul>
+              <li>Spring AI</li>
+              <li>OpenAI</li>
+              <li>RAG</li>
+              <li>Function calling</li>
+              <li>AI agents</li>
+              <li>MCP</li>
+              <li>LiteLLM</li>
+              <li>Bolna (voice AI)</li>
+              <li>STT/TTS</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Languages &amp; frameworks</h3>
+            <ul>
+              <li>Java 8–23</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Spring Data JPA</li>
+              <li>Spring Security</li>
+              <li>Angular</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Cloud, data, delivery</h3>
+            <ul>
+              <li>ECS</li>
+              <li>Lambda</li>
+              <li>API Gateway</li>
+              <li>EKS</li>
+              <li>RDS</li>
+              <li>S3</li>
+              <li>DynamoDB</li>
+              <li>CloudWatch</li>
+              <li>Oracle</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Elasticsearch</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>JUnit</li>
+              <li>Mockito</li>
+              <li>SonarQube</li>
+              <li>JaCoCo</li>
+            </ul>
+          </article>
+        </div>
+        <p class="certs">Also in daily use: Claude Code, Cursor, GitHub Copilot, and Codex.</p>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Highlights</p>
+          <h2>Results from production systems.</h2>
+        </div>
+        <div class="highlights">
+          <article class="stat">
+            <b>10,000+ TPS</b>
+            <p>Scaled the Taggd platform to handle 10,000+ transactions per second through database optimization and application tuning.</p>
+          </article>
+          <article class="stat">
+            <b>2.5s → 600ms</b>
+            <p>Cut API response time on a workshop management system through performance tuning and more efficient database interactions.</p>
+          </article>
+          <article class="stat">
+            <b>20% less DB load</b>
+            <p>Reduced database load by 20% by introducing a Redis caching layer.</p>
+          </article>
+          <article class="stat">
+            <b>SOAP → REST &amp; GraphQL</b>
+            <p>Migrated SOAP services to REST microservices and GraphQL APIs, reducing integration complexity.</p>
+          </article>
+          <article class="stat">
+            <b>80%+ coverage</b>
+            <p>Maintained 80%+ test coverage on critical modules with JUnit and Mockito, backed by SonarQube and JaCoCo quality gates.</p>
+          </article>
+        </div>
+        <ul class="more">
+          <li><strong>95% → 99.99% uptime.</strong> Better observability with Grafana dashboards, CloudWatch alerts, and distributed tracing across microservices.</li>
+          <li><strong>MTTD from 45 minutes to under 5 minutes.</strong> Centralized logging and real-time alerting.</li>
+          <li><strong>Coverage from 45% to 82%.</strong> Across critical modules with JUnit and Mockito, cutting production regression bugs by 35%.</li>
+          <li><strong>SonarQube quality gates.</strong> Merges below 80% coverage were blocked, and post-release hotfixes fell by 40% over two quarters.</li>
+          <li><strong>Zero-downtime order-management migration.</strong> From a monolithic Java/WebLogic stack to Spring Boot microservices on AWS, serving 50,000+ active users.</li>
+          <li><strong>Zero-downtime WMS database migration.</strong> From on-prem Oracle to PostgreSQL on AWS RDS, serving 10,000+ daily transactions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2>Public repositories.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <h3>Resume &amp; JD Matcher</h3>
+            <p>Explainable, RAG-powered candidate ranking built with Spring Boot, Spring AI, OpenAI, and PostgreSQL/pgvector, also exposed as an MCP server so AI agents can use it as a tool.</p>
+            <a href="https://github.com/guptagautam768/resume-jd-matcher" rel="noopener noreferrer">View repository</a>
+          </article>
+          <article class="project">
+            <h3>Monitoring POC — Java, Prometheus, Loki, Grafana</h3>
+            <p>A minimal observability proof of concept: a Spring Boot service exposes Prometheus metrics and JSON logs, which Prometheus, Promtail, Loki, and Grafana collect into one dashboard.</p>
+            <a href="https://github.com/guptagautam768/Monitoring-Prometheous-grafana-loki" rel="noopener noreferrer">View repository</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Contact</p>
+            <h2>Happy to talk about a staff or tech-lead role.</h2>
+            <p>Gurgaon, India. I read email and LinkedIn.</p>
+          </div>
+          <div class="actions">
+          </div>
+        </div>
+        <div class="contact-list">
+          <a href="mailto:guptagautam768@gmail.com"><strong>guptagautam768@gmail.com</strong><span>Email</span></a>
+          <a href="https://www.linkedin.com/in/gautam-gupta-78bb09b7/" rel="me noopener noreferrer"><strong>LinkedIn</strong><span>Profile</span></a>
+          <a href="https://github.com/guptagautam768" rel="me noopener noreferrer"><strong>GitHub</strong><span>guptagautam768</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Gautam Gupta · Staff Engineer / Tech Lead · Gurgaon, India</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.getElementById("theme-toggle");
+      var links = document.querySelectorAll('.site-nav a[href^="#"]');
+
+      function apply(theme) {
+        root.setAttribute("data-theme", theme);
+        var dark = theme === "dark";
+        button.setAttribute("aria-pressed", dark ? "true" : "false");
+        button.textContent = dark ? "Light mode" : "Dark mode";
+        button.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      }
+
+      apply(root.getAttribute("data-theme") || "light");
+
+      button.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        try { localStorage.setItem("theme", next); } catch (e) {}
+        apply(next);
+      });
+
+      if ("IntersectionObserver" in window) {
+        var sections = Array.prototype.map.call(links, function (link) {
+          return document.querySelector(link.getAttribute("href"));
+        }).filter(Boolean);
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            links.forEach(function (link) {
+              var current = link.getAttribute("href") === "#" + entry.target.id;
+              if (current) link.setAttribute("aria-current", "true");
+              else link.removeAttribute("aria-current");
+            });
+          });
+        }, { rootMargin: "-40% 0px -50% 0px", threshold: 0.01 });
+        sections.forEach(function (section) { observer.observe(section); });
+      }
+    })();
+  </script>
+</body>
+</html>
